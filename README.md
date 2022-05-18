@@ -1,24 +1,6 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# DEVELOPMENT BRANCH  
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Keys
+pid	gender	rank	rank_s	rank_cj	lname	fname	born	nation	category	bweight	snatch1	snatch2	snatch3	snatch	jerk1	jerk2	jerk3	jerk	total	event	date	sinclair total
