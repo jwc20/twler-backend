@@ -3,7 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.4"
 
-gem "iwf_ruby", :git => "https://github.com/jwc20/iwf_ruby"
+gem "iwf_ruby", :git => "https://github.com/jwc20/iwf_ruby", :ref => "development" 
+gem 'pry', '~> 0.13.1'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"

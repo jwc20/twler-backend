@@ -1,0 +1,96 @@
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE DATABASE "twler_backend_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "twler_backend_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvents (20220525191617)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (22.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "name" character varying, "location" character varying, "event_date" timestamp(6), "url" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (4.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220525191617"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAthletes (20220525191932)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "athletes" ("id" bigserial primary key, "name" character varying, "nation" character varying, "born" timestamp(6), "url" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220525191932"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEventCompetitors (20220525195316)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "event_competitors" ("id" bigserial primary key, "rank" character varying, "bweight" float, "group" character varying, "snatch" float, "jerk" float, "total" float, "event_id" integer, "athlete_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220525195316"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-05-25 13:24:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 621)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3306)
+
+
+Started GET "/events" for 127.0.0.1 at 2022-05-25 13:24:11 -0700
+Processing by EventsController#index as HTML
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 63)
+
+
+Started GET "/events" for 127.0.0.1 at 2022-05-25 13:29:10 -0700
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 3.6ms | Allocations: 10038)
+
+
+  
+NoMethodError (undefined method `make_events' for #<Event:0x0000000139b70568>):
+  
+app/controllers/events_controller.rb:5:in `index'
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-05-25 13:29:10 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/events" for 127.0.0.1 at 2022-05-25 13:33:37 -0700
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 3.0ms | Allocations: 5795)
+
+
+  
+NoMethodError (undefined method `get_years_available' for #<Event:0x00000001198b6518>):
+  
+app/controllers/events_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2022-05-25 13:42:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 621)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 3305)
+
+
+Started GET "/events" for 127.0.0.1 at 2022-05-25 13:42:38 -0700
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 4.8ms | Allocations: 10060)
+
+
+  
+NoMethodError (undefined method `get_years_available' for #<Event:0x0000000124778470>):
+  
+app/controllers/events_controller.rb:5:in `index'
+Started GET "/events" for 127.0.0.1 at 2022-05-25 13:44:18 -0700
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1731)
+
+
+  
+NameError (undefined local variable or method `iwf_ruby' for #<EventsController:0x00000000006248>):
+  
+app/controllers/events_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2022-05-25 14:14:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 621)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3306)
+
+
+Started GET "/events" for 127.0.0.1 at 2022-05-25 14:15:01 -0700
+Processing by EventsController#index as HTML
+Completed 200 OK in 1788ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 17472)
+
+
