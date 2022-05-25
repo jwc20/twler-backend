@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   resources :event_competitors
   resources :athletes
   resources :events
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "/years", to: "events#years"
+  get "/print_methods", to: "events#print_iwf_ruby_methods"
+  get "/test/:id", to: "events#list_events"
 end

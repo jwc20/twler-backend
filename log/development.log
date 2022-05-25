@@ -94,3 +94,475 @@ Processing by EventsController#index as HTML
 Completed 200 OK in 1788ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 17472)
 
 
+Started GET "/" for ::1 at 2022-05-25 14:23:53 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 373)
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 1090)
+
+
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:23:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/events" for ::1 at 2022-05-25 14:23:58 -0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for EventsController):
+  
+actionpack (7.0.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2022-05-25 14:23:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:24:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/events/eyars" for ::1 at 2022-05-25 14:24:03 -0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for EventsController):
+  
+actionpack (7.0.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:24:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/years" for ::1 at 2022-05-25 14:24:12 -0700
+Processing by EventsController#years as HTML
+Completed 200 OK in 1656ms (Views: 0.5ms | Allocations: 4300)
+
+
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:24:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:24:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/years" for ::1 at 2022-05-25 14:30:10 -0700
+Processing by EventsController#years as HTML
+Completed 200 OK in 1986ms (Views: 0.6ms | Allocations: 4277)
+
+
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:30:14 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:30:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/test" for ::1 at 2022-05-25 14:30:42 -0700
+Processing by EventsController#list_events as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 1026)
+
+
+  
+NoMethodError (undefined method `year' for #<IwfRuby::Event:0x00000001030266e8>):
+  
+app/controllers/events_controller.rb:9:in `list_events'
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:30:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:31:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/test" for ::1 at 2022-05-25 14:31:20 -0700
+Processing by EventsController#list_events as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 1012)
+
+
+  
+NoMethodError (undefined method `year' for #<IwfRuby::Event:0x0000000138514030>):
+  
+app/controllers/events_controller.rb:9:in `list_events'
+Started GET "/test" for ::1 at 2022-05-25 14:31:21 -0700
+Processing by EventsController#list_events as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 1001)
+
+
+  
+NoMethodError (undefined method `year' for #<IwfRuby::Event:0x000000012ff3df60>):
+  
+app/controllers/events_controller.rb:9:in `list_events'
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:31:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:31:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:31:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/test" for ::1 at 2022-05-25 14:32:41 -0700
+Processing by EventsController#print_iwf_ruby_methods as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 259)
+
+
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:32:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/print_methods" for ::1 at 2022-05-25 14:33:00 -0700
+Processing by EventsController#print_iwf_ruby_methods as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 259)
+
+
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:33:01 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/mockServiceWorker.js" for ::1 at 2022-05-25 14:33:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-05-25 14:34:05 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 23)
+Completed 200 OK in 0ms (Views: 0.3ms | Allocations: 203)
+
+
+Started GET "/test" for 127.0.0.1 at 2022-05-25 14:34:07 -0700
+Processing by EventsController#test as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 1011)
+
+
+  
+NoMethodError (undefined method `year' for #<IwfRuby::Event:0x000000010317f490>):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test" for 127.0.0.1 at 2022-05-25 14:35:07 -0700
+Processing by EventsController#test as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 1010)
+
+
+  
+NoMethodError (undefined method `year' for #<IwfRuby::Event:0x000000010c0cab68>):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test" for 127.0.0.1 at 2022-05-25 14:36:05 -0700
+Processing by EventsController#test as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 1011)
+
+
+  
+NoMethodError (undefined method `year' for #<IwfRuby::Event:0x000000012ffebe08>):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test" for 127.0.0.1 at 2022-05-25 14:36:41 -0700
+Processing by EventsController#test as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 98)
+
+
+Started GET "/test" for 127.0.0.1 at 2022-05-25 14:39:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/test"):
+  
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:39:16 -0700
+Processing by EventsController#test as HTML
+  Parameters: {"year"=>"2022"}
+Completed 500 Internal Server Error in 2ms (Allocations: 1020)
+
+
+  
+NoMethodError (undefined method `year' for #<IwfRuby::Event:0x000000010ca3c4a8>):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:42:02 -0700
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2022"}
+Completed 500 Internal Server Error in 1ms (Allocations: 1019)
+
+
+  
+NoMethodError (undefined method `year' for #<IwfRuby::Event:0x000000010cfa39c8>):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:42:03 -0700
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2022"}
+Completed 500 Internal Server Error in 2ms (Allocations: 1008)
+
+
+  
+NoMethodError (undefined method `year' for #<IwfRuby::Event:0x000000010c8ae398>):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:42:04 -0700
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2022"}
+Completed 500 Internal Server Error in 3ms (Allocations: 1009)
+
+
+  
+NoMethodError (undefined method `year' for #<IwfRuby::Event:0x000000010cfec060>):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:46:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2022"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 15420)
+
+
+  
+ArgumentError (comparison of String with 2018 failed):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:46:05 -0700
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2022"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 106)
+
+
+  
+ArgumentError (comparison of String with 2018 failed):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:48:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2022"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 15419)
+
+
+  
+ArgumentError (comparison of String with 2018 failed):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:48:30 -0700
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2022"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 106)
+
+
+  
+ArgumentError (comparison of String with 2018 failed):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:53:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2022"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 15419)
+
+
+  
+ArgumentError (comparison of String with 2018 failed):
+  
+app/controllers/events_controller.rb:14:in `test'
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:55:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2022"}
+Completed 200 OK in 1125ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 31186)
+
+
+Started GET "/test/2021" for 127.0.0.1 at 2022-05-25 14:55:39 -0700
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2021"}
+Completed 200 OK in 1055ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4656)
+
+
+Started GET "/test/2021" for 127.0.0.1 at 2022-05-25 14:56:18 -0700
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2021"}
+Completed 200 OK in 838ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 6141)
+
+
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:56:23 -0700
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2022"}
+Completed 200 OK in 1064ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 4416)
+
+
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:56:26 -0700
+Processing by EventsController#test as HTML
+  Parameters: {"id"=>"2022"}
+Completed 200 OK in 1147ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 4479)
+
+
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:58:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/test/2022"):
+  
+Started GET "/events/2022" for 127.0.0.1 at 2022-05-25 14:58:10 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2022"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 41)
+
+
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:58:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/test/2022"):
+  
+Started GET "/events/2022" for 127.0.0.1 at 2022-05-25 14:58:20 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2022"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 26)
+
+
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:58:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/test/2022"):
+  
+Started GET "/events/2022" for 127.0.0.1 at 2022-05-25 14:58:32 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2022"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 26)
+
+
+Started GET "/events/2022" for 127.0.0.1 at 2022-05-25 14:58:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2022"}
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 15340)
+
+
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:59:19 -0700
+  
+AbstractController::ActionNotFound (The action 'test' could not be found for EventsController):
+  
+actionpack (7.0.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/test/2022" for 127.0.0.1 at 2022-05-25 14:59:38 -0700
+Processing by EventsController#list_events as HTML
+  Parameters: {"id"=>"2022"}
+Completed 200 OK in 789ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 15900)
+
+
+Started GET "/test/2021" for 127.0.0.1 at 2022-05-25 14:59:45 -0700
+Processing by EventsController#list_events as HTML
+  Parameters: {"id"=>"2021"}
+Completed 200 OK in 1213ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 5020)
+
+

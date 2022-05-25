@@ -1,7 +1,23 @@
 class EventsController < ApplicationController
   require "iwf_ruby"
 
-  def index
+  def years
     render json: IwfRuby::Event.new.get_years_available
+  end
+
+  def print_iwf_ruby_methods
+    render json: Event.instance_methods - Object.instance_methods
+  end
+
+  def list_events
+    render json: IwfRuby::Event.new.print_events(params[:id])
+  end
+
+  def show
+  end
+
+  private
+
+  def find_events
   end
 end
