@@ -9,11 +9,14 @@ class EventsController < ApplicationController
     render json: Event.instance_methods - Object.instance_methods
   end
 
+=begin
   def list_events
     render json: IwfRuby::Event.new.print_events(params[:id])
   end
+=end
 
   def show
+    render json: IwfRuby::Event.new.print_events(params[:id])
   end
 
   private

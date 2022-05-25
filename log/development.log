@@ -566,3 +566,48 @@ Processing by EventsController#list_events as HTML
 Completed 200 OK in 1213ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 5020)
 
 
+Started GET "/test/2021" for 127.0.0.1 at 2022-05-25 15:01:24 -0700
+Processing by EventsController#list_events as HTML
+  Parameters: {"id"=>"2021"}
+Completed 200 OK in 1219ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 6111)
+
+
+Started GET "/events/2021" for 127.0.0.1 at 2022-05-25 15:01:59 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2021"}
+Completed 200 OK in 852ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 7200)
+
+
+Started GET "/events/2022" for 127.0.0.1 at 2022-05-25 15:02:03 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2022"}
+Completed 200 OK in 1070ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 5496)
+
+
+Started GET "/events/2017" for 127.0.0.1 at 2022-05-25 15:02:12 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2017"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 108)
+
+
+  
+ArgumentError (comparison of String with 2018 failed):
+  
+app/controllers/events_controller.rb:19:in `show'
+Started GET "/events/2014" for 127.0.0.1 at 2022-05-25 15:02:17 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2014"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 103)
+
+
+  
+ArgumentError (comparison of String with 2018 failed):
+  
+app/controllers/events_controller.rb:19:in `show'
+Started GET "/events/2014" for 127.0.0.1 at 2022-05-25 15:03:21 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2014"}
+Completed 200 OK in 1177ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 35897)
+
+
