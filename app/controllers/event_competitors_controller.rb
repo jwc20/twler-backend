@@ -1,0 +1,2 @@
+class EventCompetitorsController < ApplicationController
+end

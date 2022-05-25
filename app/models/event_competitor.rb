@@ -1,0 +1,2 @@
+class EventCompetitor < ApplicationRecord
+end

@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  rank: MyString
+  nation: MyString
+  born: 2022-05-25 12:19:32
+  bweight: 1.5
+  group: MyString
+  snatch: 1.5
+  jerk: 1.5
+  total: 1.5
+  url: MyString
+  event_id: 1
+
+two:
+  name: MyString
+  rank: MyString
+  nation: MyString
+  born: 2022-05-25 12:19:32
+  bweight: 1.5
+  group: MyString
+  snatch: 1.5
+  jerk: 1.5
+  total: 1.5
+  url: MyString
+  event_id: 1
