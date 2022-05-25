@@ -611,3 +611,46 @@ Processing by EventsController#show as HTML
 Completed 200 OK in 1177ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 35897)
 
 
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-25 16:35:38 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1106ms (Views: 2.6ms | Allocations: 3998)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-25 16:35:42 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1096ms (Views: 2.2ms | Allocations: 6859)
+
+
+Started GET "/events/years/2016" for 127.0.0.1 at 2022-05-25 16:36:05 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2016"}
+Completed 200 OK in 1119ms (Views: 1.5ms | Allocations: 8791)
+
+
+Started GET "/events/years/2016" for 127.0.0.1 at 2022-05-25 16:36:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2016"}
+Completed 200 OK in 1090ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 34868)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-25 16:36:43 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1046ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 3594)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-25 16:40:40 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1198ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2203)
+
+
+Started GET "/events/years/2012" for 127.0.0.1 at 2022-05-25 16:40:47 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2012"}
+Completed 200 OK in 824ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 5843)
+
+

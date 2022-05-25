@@ -5,5 +5,8 @@ Rails.application.routes.draw do
 
   get "/years", to: "events#years"
   get "/print_methods", to: "events#print_iwf_ruby_methods"
+  get "/events/years/:year", to: "events#events_by_year"
+  get "/events/:id/result", to: "events#results"
+
   # get "/test/:id", to: "events#list_events"
 end

@@ -15,8 +15,13 @@ class EventsController < ApplicationController
   end
 =end
 
-  def show
-    render json: IwfRuby::Event.new.print_events(params[:id])
+  def events_by_year
+    IwfRuby::Event.reset_all
+    render json: IwfRuby::Event.new.print_events(params[:year])
+  end
+
+  def results
+    # render json: IwfRuby::Event.new.print_events(params[:id])
   end
 
   private
