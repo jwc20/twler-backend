@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/jwc20/iwf_ruby
+  revision: a836d7df39aeaa76e43b20409662e7a15abcb71e
+  specs:
+    iwf_ruby (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -163,6 +169,7 @@ PLATFORMS
 
 DEPENDENCIES
   debug
+  iwf_ruby!
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.3)
