@@ -654,3 +654,173 @@ Processing by EventsController#events_by_year as HTML
 Completed 200 OK in 824ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 5843)
 
 
+Started GET "/events/years/2012" for 127.0.0.1 at 2022-05-25 16:45:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2012"}
+Completed 200 OK in 1126ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 34859)
+
+
+Started GET "/events/years/2012" for 127.0.0.1 at 2022-05-25 16:55:30 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2012"}
+Completed 200 OK in 1130ms (Views: 0.6ms | Allocations: 5848)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:31:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#years as HTML
+Completed 200 OK in 1949ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 32700)
+
+
+Started GET "//years" for 127.0.0.1 at 2022-05-25 17:32:45 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1927ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 4245)
+
+
+Started GET "//years" for 127.0.0.1 at 2022-05-25 17:33:17 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 2413ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4243)
+
+
+Started GET "//years" for 127.0.0.1 at 2022-05-25 17:33:21 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1964ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 4264)
+
+
+Started GET "//years" for 127.0.0.1 at 2022-05-25 17:33:23 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1421ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4279)
+
+
+Started GET "//years" for 127.0.0.1 at 2022-05-25 17:33:24 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1627ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4257)
+
+
+Started GET "//years" for 127.0.0.1 at 2022-05-25 17:33:40 -0700
+Processing by EventsController#years as */*
+Started GET "//years" for 127.0.0.1 at 2022-05-25 17:33:42 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1966ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 5234)
+
+
+Completed 200 OK in 1639ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 6318)
+
+
+Started GET "//years" for 127.0.0.1 at 2022-05-25 17:33:43 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 2016ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4250)
+
+
+Started GET "//years" for 127.0.0.1 at 2022-05-25 17:33:45 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1774ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4245)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:34:01 -0700
+Processing by EventsController#years as */*
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:34:02 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 2001ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 6781)
+
+
+Completed 200 OK in 1654ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 8330)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:34:04 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1673ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4252)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:34:06 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1935ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 4280)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:43:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#years as */*
+Completed 200 OK in 2315ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 32705)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:43:04 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1945ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 4346)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:43:18 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 2343ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4245)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:43:20 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1938ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4272)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:44:54 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1913ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4270)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:44:56 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1933ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4238)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:45:55 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 2273ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4236)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:45:57 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1542ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4260)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:46:00 -0700
+Processing by EventsController#years as */*
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:46:01 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1511ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 5328)
+
+
+Completed 200 OK in 1801ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 8448)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:46:03 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1465ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4277)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:46:43 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1625ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 4293)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:46:46 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1988ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4285)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:46:48 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 1630ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4237)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:47:25 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 2269ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4316)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:57:56 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 2166ms (Views: 0.1ms | Allocations: 4252)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-25 17:58:07 -0700
+Processing by EventsController#years as */*
+Completed 200 OK in 2219ms (Views: 0.2ms | Allocations: 4247)
+
+
