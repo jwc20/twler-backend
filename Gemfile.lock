@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jwc20/iwf_ruby
-  revision: 740f9a242c9085be340f9949e146cc1585a8ed1e
+  revision: e57a164b170696979f386d664996f93428da5ad1
   ref: development
   specs:
     iwf_ruby (0.1.0)
