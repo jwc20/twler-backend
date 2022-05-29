@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jwc20/iwf_ruby
-  revision: 740f9a242c9085be340f9949e146cc1585a8ed1e
+  revision: f0f160dd7c6142de95a94a1870e0662079dd2eec
   ref: development
   specs:
     iwf_ruby (0.1.0)
@@ -61,6 +61,8 @@ GEM
     activerecord (7.0.3)
       activemodel (= 7.0.3)
       activesupport (= 7.0.3)
+    activerecord-import (1.4.0)
+      activerecord (>= 4.2)
     activestorage (7.0.3)
       actionpack (= 7.0.3)
       activejob (= 7.0.3)
@@ -175,6 +177,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-import
   debug
   iwf_ruby!
   pg (~> 1.1)

@@ -3,11 +3,13 @@ Rails.application.routes.draw do
   resources :athletes
   resources :events
 
-  get "/years", to: "events#years"
-  get "/events/years/:year", to: "events#events_by_year"
-  get "/events/:id/result", to: "events#results"
+  get '/years', to: 'events#years'
+  get '/events/years/:year', to: 'events#events_by_year'
+  get '/events/:id/result', to: 'events#results'
 
   # get "/test/:id", to: "events#list_events"
 
-  get "/print_methods", to: "events#print_iwf_ruby_methods"
+  get '/get_results', to: 'event_competitors#scrape_results'
+
+  get '/print_methods', to: 'events#print_iwf_ruby_methods'
 end

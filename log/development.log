@@ -907,3 +907,821 @@ Migrating to CreateEventCompetitors (20220525195316)
   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8454960492084110235)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-05-28 17:25:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 621)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 3306)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-28 17:25:33 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 368)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1087)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 17:25:41 -0700
+Processing by EventsController#years as HTML
+Completed 200 OK in 2108ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 17421)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 17:25:54 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 912ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2818)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 17:26:14 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 784ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2209)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 17:26:17 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 847ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2220)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 17:28:16 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1249ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 4972)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 17:29:10 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1556)
+
+
+  
+NameError (uninitialized constant IwfRuby::Scraper
+Did you mean?  ScriptError):
+  
+app/controllers/events_controller.rb:18:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 17:32:18 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1282ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 4968)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 17:32:55 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1147ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2179)
+
+
+Started GET "/events/years/2014" for 127.0.0.1 at 2022-05-28 17:33:01 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2014"}
+Completed 200 OK in 1138ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 6914)
+
+
+Started GET "/events/years/2014" for 127.0.0.1 at 2022-05-28 17:33:17 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2014"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1548)
+
+
+  
+NameError (uninitialized constant IwfRuby::Scraper
+Did you mean?  ScriptError):
+  
+app/controllers/events_controller.rb:18:in `events_by_year'
+Started GET "/events/years/2014" for 127.0.0.1 at 2022-05-28 17:35:12 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2014"}
+Completed 200 OK in 1177ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 6910)
+
+
+Started GET "/get_methods" for 127.0.0.1 at 2022-05-28 17:35:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/get_methods"):
+  
+Started GET "/print_methods" for 127.0.0.1 at 2022-05-28 17:35:31 -0700
+Processing by EventsController#print_iwf_ruby_methods as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 17:38:45 -0700
+Processing by EventCompetitorsController#print_results as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 706)
+
+
+  
+NoMethodError (undefined method `print_male_athletes' for #<IwfRuby::Event:0x000000011a4f9488>
+Did you mean?  print_athletes):
+  
+app/controllers/event_competitors_controller.rb:4:in `print_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 17:42:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#print_results as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 16882)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/event_competitors_controller.rb:4:in `print_results'
+Started GET "/events/years/2014" for 127.0.0.1 at 2022-05-28 17:43:11 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2014"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1564)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/events_controller.rb:17:in `events_by_year'
+Started GET "/events/years/2014" for 127.0.0.1 at 2022-05-28 17:43:25 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2014"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1567)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/events_controller.rb:17:in `events_by_year'
+Started GET "/events/years/2014" for 127.0.0.1 at 2022-05-28 17:43:35 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2014"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 930)
+
+
+  
+NoMethodError (undefined method `reset_all' for IwfRuby::Scraper:Class):
+  
+app/controllers/events_controller.rb:17:in `events_by_year'
+Started GET "/events/years/2014" for 127.0.0.1 at 2022-05-28 17:43:49 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2014"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1567)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/events_controller.rb:17:in `events_by_year'
+Started GET "/events/years/2014" for 127.0.0.1 at 2022-05-28 17:43:57 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2014"}
+Completed 200 OK in 1261ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 20639)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 17:44:11 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1129ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 3965)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 17:44:17 -0700
+Processing by EventsController#years as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1559)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/events_controller.rb:5:in `years'
+Started GET "/years" for 127.0.0.1 at 2022-05-28 17:44:26 -0700
+Processing by EventsController#years as HTML
+Completed 200 OK in 2398ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4356)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 17:45:21 -0700
+Processing by EventCompetitorsController#print_results as HTML
+Completed 200 OK in 2417ms (Views: 53.9ms | ActiveRecord: 0.0ms | Allocations: 352112)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 17:47:51 -0700
+Processing by EventCompetitorsController#print_results as HTML
+Completed 200 OK in 2588ms (Views: 46.7ms | ActiveRecord: 0.0ms | Allocations: 460405)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-05-28 17:53:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 17:54:23 -0700
+Processing by EventCompetitorsController#print_results as HTML
+Completed 500 Internal Server Error in 1822ms (ActiveRecord: 0.0ms | Allocations: 25848)
+
+
+  
+NoMethodError (undefined method `nil' for nil:NilClass):
+  
+app/controllers/event_competitors_controller.rb:4:in `print_results'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 17:55:35 -0700
+Processing by EventsController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 902ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 5640)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 17:55:36 -0700
+Processing by EventsController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 869ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 6029)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 17:56:29 -0700
+Processing by EventCompetitorsController#print_results as HTML
+Completed 500 Internal Server Error in 1928ms (ActiveRecord: 0.0ms | Allocations: 12401)
+
+
+  
+NoMethodError (undefined method `nil' for nil:NilClass):
+  
+app/controllers/event_competitors_controller.rb:4:in `print_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 17:57:29 -0700
+Processing by EventCompetitorsController#print_results as HTML
+Completed 500 Internal Server Error in 1770ms (ActiveRecord: 0.0ms | Allocations: 12169)
+
+
+  
+NoMethodError (undefined method `nil' for nil:NilClass):
+  
+app/controllers/event_competitors_controller.rb:4:in `print_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 17:57:34 -0700
+Processing by EventCompetitorsController#print_results as HTML
+Completed 500 Internal Server Error in 1865ms (ActiveRecord: 0.0ms | Allocations: 12424)
+
+
+  
+NoMethodError (undefined method `nil' for nil:NilClass):
+  
+app/controllers/event_competitors_controller.rb:4:in `print_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 17:57:58 -0700
+Processing by EventCompetitorsController#print_results as HTML
+Completed 500 Internal Server Error in 1951ms (ActiveRecord: 0.0ms | Allocations: 12239)
+
+
+  
+NoMethodError (undefined method `nil' for nil:NilClass):
+  
+app/controllers/event_competitors_controller.rb:3:in `print_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 17:58:07 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#print_results as HTML
+Completed 200 OK in 1967ms (Views: 58.1ms | ActiveRecord: 0.0ms | Allocations: 380547)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 17:58:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#print_results as HTML
+Completed 200 OK in 2279ms (Views: 57.9ms | ActiveRecord: 0.0ms | Allocations: 380155)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:06:02 -0700
+  
+NoMethodError (undefined method `validates' for EventCompetitorsController:Class):
+  
+app/controllers/event_competitors_controller.rb:3:in `<class:EventCompetitorsController>'
+app/controllers/event_competitors_controller.rb:1:in `<top (required)>'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:09:24 -0700
+Processing by EventCompetitorsController#print_results as HTML
+Completed 200 OK in 2720ms (Views: 98.5ms | Allocations: 460144)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:09:51 -0700
+Processing by EventCompetitorsController#print_results as HTML
+Completed 200 OK in 2351ms (Views: 82.7ms | Allocations: 570116)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:09:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#print_results as HTML
+Completed 200 OK in 2137ms (Views: 58.6ms | ActiveRecord: 0.0ms | Allocations: 380580)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:20:27 -0700
+  
+AbstractController::ActionNotFound (The action 'print_results' could not be found for EventCompetitorsController):
+  
+actionpack (7.0.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:20:53 -0700
+  
+AbstractController::ActionNotFound (The action 'print_results' could not be found for EventCompetitorsController):
+  
+actionpack (7.0.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:23:11 -0700
+  
+AbstractController::ActionNotFound (The action 'print_results' could not be found for EventCompetitorsController):
+  
+actionpack (7.0.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:23:13 -0700
+  
+AbstractController::ActionNotFound (The action 'print_results' could not be found for EventCompetitorsController):
+  
+actionpack (7.0.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:23:18 -0700
+  
+AbstractController::ActionNotFound (The action 'print_results' could not be found for EventCompetitorsController):
+  
+actionpack (7.0.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:23:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'print_results' could not be found for EventCompetitorsController):
+  
+actionpack (7.0.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:24:00 -0700
+Processing by EventCompetitorsController#scrape as HTML
+Completed 200 OK in 2283ms (Views: 42.0ms | ActiveRecord: 0.0ms | Allocations: 365280)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:39:14 -0700
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 2629ms (Allocations: 263839)
+
+
+  
+NoMethodError (undefined method `find_or_initialize' for #<Class:0x0000000105a4cad0>
+Did you mean?  find_or_initialize_by
+               first_or_initialize):
+  
+app/controllers/event_competitors_controller.rb:15:in `block in scrape_results'
+app/controllers/event_competitors_controller.rb:13:in `each'
+app/controllers/event_competitors_controller.rb:13:in `scrape_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:39:36 -0700
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 1959ms (ActiveRecord: 13.9ms | Allocations: 271891)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column event_competitors.name does not exist
+LINE 1: ...ent_competitors".* FROM "event_competitors" WHERE "event_com...
+                                                             ^
+):
+  
+app/controllers/event_competitors_controller.rb:15:in `block in scrape_results'
+app/controllers/event_competitors_controller.rb:13:in `each'
+app/controllers/event_competitors_controller.rb:13:in `scrape_results'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEventCompetitors (20220525195316)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE "event_competitors"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220525195316"]]
+  [1m[36mTRANSACTION (9.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEventCompetitors (20220525195316)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "event_competitors" ("id" bigserial primary key, "name" character varying, "nation" character varying, "url" character varying, "birthdate" timestamp(6), "rank" character varying, "bweight" float, "group" character varying, "category" character varying, "snatch" float, "jerk" float, "total" float, "event_id" integer, "athlete_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220525195316"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:43:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#scrape_results as HTML
+  [1m[36mEventCompetitor Load (3.1ms)[0m  [1m[34mSELECT "event_competitors".* FROM "event_competitors" WHERE "event_competitors"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/event_competitors_controller.rb:15:in `block in scrape_results'
+Completed 500 Internal Server Error in 1955ms (ActiveRecord: 7.0ms | Allocations: 295600)
+
+
+  
+NoMethodError (undefined method `athlete_url=' for #<EventCompetitor:0x0000000131723990>
+Did you mean?  athlete_id=):
+  
+app/controllers/event_competitors_controller.rb:18:in `block in scrape_results'
+app/controllers/event_competitors_controller.rb:13:in `each'
+app/controllers/event_competitors_controller.rb:13:in `scrape_results'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEventCompetitors (20220525195316)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "event_competitors"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220525195316"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEventCompetitors (20220525195316)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "event_competitors" ("id" bigserial primary key, "name" character varying, "nation" character varying, "athlete_url" character varying, "birthdate" timestamp(6), "rank" character varying, "bweight" float, "group" character varying, "category" character varying, "snatch" float, "jerk" float, "total" float, "event_id" integer, "athlete_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220525195316"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:44:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#scrape_results as HTML
+  [1m[36mEventCompetitor Load (3.4ms)[0m  [1m[34mSELECT "event_competitors".* FROM "event_competitors" WHERE "event_competitors"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/event_competitors_controller.rb:15:in `block in scrape_results'
+  [1m[36mEventCompetitor Load (0.4ms)[0m  [1m[34mSELECT "event_competitors".* FROM "event_competitors" WHERE "event_competitors"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/event_competitors_controller.rb:15:in `block in scrape_results'
+Completed 500 Internal Server Error in 2266ms (ActiveRecord: 7.0ms | Allocations: 270324)
+
+
+  
+ArgumentError (Rails couldn't find a valid model for Event association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+  
+app/controllers/event_competitors_controller.rb:26:in `block in scrape_results'
+app/controllers/event_competitors_controller.rb:13:in `each'
+app/controllers/event_competitors_controller.rb:13:in `scrape_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:46:28 -0700
+  
+SyntaxError (/Users/cjw/Development/code/flatironSchool/phase-5/twler-backend/app/controllers/event_competitors_controller.rb:17: syntax error, unexpected local variable or method, expecting ')'
+        event_competitor.nation = result.nation
+        ^~~~~~~~~~~~~~~~
+/Users/cjw/Development/code/flatironSchool/phase-5/twler-backend/app/controllers/event_competitors_controller.rb:27: syntax error, unexpected ')', expecting `end'
+      )
+      ^
+):
+  
+app/controllers/event_competitors_controller.rb:17: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/event_competitors_controller.rb:27: syntax error, unexpected ')', expecting `end'
+app/controllers/event_competitors_controller.rb:17: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/event_competitors_controller.rb:27: syntax error, unexpected ')', expecting `end'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:46:54 -0700
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 2389ms (ActiveRecord: 0.0ms | Allocations: 269473)
+
+
+  
+NameError (undefined local variable or method `event_competitor' for #<EventCompetitorsController:0x0000000000a000>
+Did you mean?  event_competitor_url):
+  
+app/controllers/event_competitors_controller.rb:14:in `block in scrape_results'
+app/controllers/event_competitors_controller.rb:12:in `each'
+app/controllers/event_competitors_controller.rb:12:in `scrape_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:47:57 -0700
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 2841ms (ActiveRecord: 5.7ms | Allocations: 281849)
+
+
+  
+ArgumentError (Rails couldn't find a valid model for Event association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+  
+app/controllers/event_competitors_controller.rb:13:in `block in scrape_results'
+app/controllers/event_competitors_controller.rb:12:in `each'
+app/controllers/event_competitors_controller.rb:12:in `scrape_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:48:36 -0700
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 204 No Content in 2707ms (ActiveRecord: 0.0ms | Allocations: 294682)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:48:52 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 204 No Content in 1870ms (ActiveRecord: 0.0ms | Allocations: 281427)
+
+
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 18:49:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 2324ms (ActiveRecord: 7.1ms | Allocations: 296114)
+
+
+  
+ArgumentError (Rails couldn't find a valid model for Event association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+  
+app/controllers/event_competitors_controller.rb:13:in `block in scrape_results'
+app/controllers/event_competitors_controller.rb:12:in `each'
+app/controllers/event_competitors_controller.rb:12:in `scrape_results'
+  [1m[36mEventCompetitor Load (0.5ms)[0m  [1m[34mSELECT "event_competitors".* FROM "event_competitors"[0m
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 19:11:47 -0700
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 2653ms (Allocations: 262568)
+
+
+  
+NoMethodError (undefined method `import' for #<Class:0x0000000132be3b78>):
+  
+app/controllers/event_competitors_controller.rb:13:in `scrape_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 19:12:35 -0700
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 2312ms (Allocations: 268933)
+
+
+  
+NoMethodError (undefined method `import' for #<Class:0x0000000132be3b78>):
+  
+app/controllers/event_competitors_controller.rb:13:in `scrape_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 19:14:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 2243ms (ActiveRecord: 6.5ms | Allocations: 283389)
+
+
+  
+ArgumentError (Invalid arguments!):
+  
+app/controllers/event_competitors_controller.rb:16:in `scrape_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 19:15:09 -0700
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 1908ms (ActiveRecord: 4.5ms | Allocations: 260586)
+
+
+  
+ArgumentError (Invalid arguments!):
+  
+app/controllers/event_competitors_controller.rb:16:in `scrape_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 19:15:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 2202ms (ActiveRecord: 7.3ms | Allocations: 283442)
+
+
+  
+ArgumentError (Invalid arguments!):
+  
+app/controllers/event_competitors_controller.rb:16:in `scrape_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 19:20:27 -0700
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 3090ms (ActiveRecord: 7.0ms | Allocations: 260565)
+
+
+  
+ArgumentError (Invalid arguments!):
+  
+app/controllers/event_competitors_controller.rb:16:in `scrape_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 19:23:43 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 2027ms (ActiveRecord: 6.7ms | Allocations: 283422)
+
+
+  
+ArgumentError (Invalid arguments!):
+  
+app/controllers/event_competitors_controller.rb:16:in `scrape_results'
+Started GET "/get_results" for 127.0.0.1 at 2022-05-28 19:25:04 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventCompetitorsController#scrape_results as HTML
+Completed 500 Internal Server Error in 1881ms (ActiveRecord: 7.1ms | Allocations: 274925)
+
+
+  
+ArgumentError (Invalid arguments!):
+  
+app/controllers/event_competitors_controller.rb:16:in `scrape_results'

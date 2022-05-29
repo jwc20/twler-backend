@@ -24,6 +24,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_25_195316) do
   end
 
   create_table "event_competitors", force: :cascade do |t|
+    t.string "name"
+    t.string "nation"
+    t.string "athlete_url"
+    t.datetime "birthdate"
     t.string "rank"
     t.float "bweight"
     t.string "group"
