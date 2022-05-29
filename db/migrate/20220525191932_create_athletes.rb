@@ -4,7 +4,7 @@ class CreateAthletes < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :nation
       t.datetime :born
-      t.string :url
+      t.string :athlete_url
 
       t.timestamps
     end

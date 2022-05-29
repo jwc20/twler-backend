@@ -18,7 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_25_195316) do
     t.string "name"
     t.string "nation"
     t.datetime "born"
-    t.string "url"
+    t.string "athlete_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,6 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_25_195316) do
     t.string "rank"
     t.float "bweight"
     t.string "group"
+    t.string "category"
     t.float "snatch"
     t.float "jerk"
     t.float "total"
@@ -40,7 +41,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_25_195316) do
     t.string "name"
     t.string "location"
     t.datetime "event_date"
-    t.string "url"
+    t.string "event_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

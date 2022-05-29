@@ -4,6 +4,7 @@ class CreateEventCompetitors < ActiveRecord::Migration[7.0]
       t.string :rank
       t.float :bweight
       t.string :group
+      t.string :category
       t.float :snatch
       t.float :jerk
       t.float :total
