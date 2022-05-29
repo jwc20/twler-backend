@@ -3637,3 +3637,244 @@ Processing by EventsController#years as */*
 Completed 200 OK in 1889ms (Views: 0.7ms | Allocations: 4259)
 
 
+Started GET "/years" for 127.0.0.1 at 2022-05-28 20:04:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#years as HTML
+Completed 200 OK in 2595ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 32701)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 20:04:41 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1273ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2863)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 20:04:45 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1146ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 4963)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 20:05:02 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1265ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 4972)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 20:10:13 -0700
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 924ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 4988)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 20:10:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#events_by_year as HTML
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 16875)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/events_controller.rb:19:in `events_by_year'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateScrapers (20220529031443)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "scrapers" ("id" bigserial primary key, "athlete_name" character varying, "nation" character varying, "birthdate" timestamp(6), "athlete_url" character varying, "bweight" float, "group" character varying, "category" character varying, "snatch" float, "jerk" float, "total" float, "event_name" character varying, "event_date" timestamp(6), "event_url" character varying, "location" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220529031443"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(8454960492084110235)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 20:16:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#events_by_year as HTML
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1282ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 18664)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 20:48:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#events_by_year as HTML
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1198ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 33973)
+
+
+Started GET "/events/years/2021/XXXII%20OLYMPIC%20GAMES/results" for 127.0.0.1 at 2022-05-28 20:51:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/events/years/2021/XXXII%20OLYMPIC%20GAMES/results"):
+  
+Started GET "/events/years/2021/xxxii-olympic-games/results" for 127.0.0.1 at 2022-05-28 20:52:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/events/years/2021/xxxii-olympic-games/results"):
+  
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 20:52:48 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 701)
+
+
+  
+NoMethodError (undefined method `find_events' for #<IwfRuby::Scraper:0x0000000137109c48>
+Did you mean?  find_event):
+  
+app/controllers/scrapers_controller.rb:14:in `results'
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 20:53:35 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 1390ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 17774)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 20:56:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 3018ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 217055)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:07:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 2827ms (Views: 87.4ms | ActiveRecord: 0.0ms | Allocations: 312211)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:08:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 2844ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 217028)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:10:34 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 2816ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 217059)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:11:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 2779ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 217010)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-28 21:11:40 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 621)
+Completed 200 OK in 15ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3302)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 21:11:42 -0700
+Processing by ScrapersController#years as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1583)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/scrapers_controller.rb:5:in `years'
+Started GET "/years" for 127.0.0.1 at 2022-05-28 21:12:12 -0700
+Processing by ScrapersController#years as HTML
+Completed 200 OK in 1903ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4365)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 21:12:41 -0700
+Processing by ScrapersController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1251ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 3275)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:17:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 3165ms (Views: 86.2ms | ActiveRecord: 0.0ms | Allocations: 312252)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:22:49 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 3101ms (Views: 70.1ms | ActiveRecord: 0.0ms | Allocations: 313403)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:23:50 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 3165ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 147051)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:24:10 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 3400ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 151514)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:25:06 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 3479ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 155877)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:25:15 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 2429ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 186568)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:30:00 -0700
+  
+NoMethodError (undefined method `validates' for ScrapersController:Class):
+  
+app/controllers/scrapers_controller.rb:3:in `<class:ScrapersController>'
+app/controllers/scrapers_controller.rb:1:in `<top (required)>'
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:33:12 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 3232ms (Views: 83.5ms | ActiveRecord: 0.0ms | Allocations: 242812)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:33:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 2759ms (Views: 87.2ms | ActiveRecord: 0.0ms | Allocations: 312200)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:38:28 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 500 Internal Server Error in 3495ms (ActiveRecord: 0.0ms | Allocations: 147725)
+
+
+  
+NoMethodError (undefined method `valid?' for nil:NilClass):
+  
+app/controllers/scrapers_controller.rb:18:in `block in results'
+app/controllers/scrapers_controller.rb:17:in `each'
+app/controllers/scrapers_controller.rb:17:in `results'
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:38:46 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 2496ms (Views: 80.1ms | ActiveRecord: 0.0ms | Allocations: 406808)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:39:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:39:41 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 3435ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 221626)
+
+
+Completed 200 OK in 2813ms (Views: 55.5ms | ActiveRecord: 0.0ms | Allocations: 425589)
+
+

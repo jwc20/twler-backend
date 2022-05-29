@@ -1,13 +1,20 @@
 Rails.application.routes.draw do
+  resources :scrapers
   resources :event_competitors
   resources :athletes
   resources :events
 
-  get "/years", to: "events#years"
-  get "/events/years/:year", to: "events#events_by_year"
-  get "/events/:id/result", to: "events#results"
+  get '/years', to: 'scrapers#years'
+  get '/events/years/:year', to: 'scrapers#events_by_year'
 
-  # get "/test/:id", to: "events#list_events"
+  # get stats of event?
+  # get '/events/:name_of_event', to: 'scrapers#results'
+  get '/events/years/:year/:name_of_event/result', to: 'scrapers#results'
+  
 
-  get "/print_methods", to: "events#print_iwf_ruby_methods"
+
+  
+
+
+  get '/print_methods', to: 'scrapers#print_iwf_ruby_methods'
 end
