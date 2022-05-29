@@ -1,23 +1,20 @@
 class ScrapersController < ApplicationController
   require 'iwf_ruby'
-  
 
   def years
     render json: IwfRuby::Scraper.new.get_years_available
   end
 
   def events_by_year
-    # IwfRuby::Event.reset_all
+    # IwfRuby::Scraper.clear
     render json: IwfRuby::Scraper.new.print_events(params[:year])
   end
 
   def results
     athletes = IwfRuby::Scraper.new.find_event(params[:name_of_event], params[:year])
-    array = Array.new
-    athletes.each do |athlete| 
-      if athlete.name != nil
-        array.push(athlete)
-      end
+    array = []
+    athletes.each do |athlete|
+      array.push(athlete) unless athlete.name.nil?
     end
     render json: array
   end
@@ -28,6 +25,5 @@ class ScrapersController < ApplicationController
 
   private
 
-  
   def find_events; end
 end

@@ -3,11 +3,15 @@
 # This app will directly render data that is scraped with iwf_ruby 
 # (Not from a postgresql database!)
 
+
+## Endpoint Summary:
+```
+
+```
+
 ## Prototype build:
 ![ERD 1](./public/twler_backend_prototype.png)
 
 ## Full build (hopefully): 
 ![ERD 2](./public/twler_backend2.png)
 
-## Keys
-pid	gender	rank	rank_s	rank_cj	lname	fname	born	nation	category	bweight	snatch1	snatch2	snatch3	snatch	jerk1	jerk2	jerk3	jerk	total	event	date	sinclair total

@@ -3878,3 +3878,1522 @@ Completed 200 OK in 3435ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 2
 Completed 200 OK in 2813ms (Views: 55.5ms | ActiveRecord: 0.0ms | Allocations: 425589)
 
 
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:42:16 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 2700ms (Views: 38.1ms | ActiveRecord: 0.0ms | Allocations: 297562)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 21:45:26 -0700
+Processing by ScrapersController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1246ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 5511)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:45:30 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1121ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 8255)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:45:31 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1288ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 9326)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:46:38 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1102ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 10431)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:46:39 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1251ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 11505)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:48:18 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1248ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 12566)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:48:19 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 898ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 13655)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:49:50 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1163ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 14723)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:49:51 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1225ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 15819)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:50:35 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1151ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 16916)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:50:58 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1236ms (Views: 8.5ms | Allocations: 17965)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:50:59 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:51:00 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1188ms (Views: 4.4ms | Allocations: 19907)
+
+
+Completed 200 OK in 1160ms (Views: 6.6ms | Allocations: 39043)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:51:01 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1214ms (Views: 4.7ms | Allocations: 21224)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:52:15 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1318ms (Views: 9.7ms | Allocations: 22289)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:52:16 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1181ms (Views: 9.7ms | Allocations: 23382)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:52:25 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 893ms (Views: 10.8ms | Allocations: 24449)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:52:26 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 937ms (Views: 12.7ms | Allocations: 25540)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:54:15 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 500 Internal Server Error in 3ms (Allocations: 1593)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/scrapers_controller.rb:14:in `results'
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:54:54 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 3189ms (Views: 81.5ms | Allocations: 354891)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:55:00 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1224ms (Views: 29.3ms | Allocations: 27726)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:55:01 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 901ms (Views: 11.5ms | Allocations: 28851)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:55:06 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1299ms (Views: 11.0ms | Allocations: 29846)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:55:08 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 878ms (Views: 11.1ms | Allocations: 30935)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:55:10 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 936ms (Views: 12.5ms | Allocations: 32007)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:55:11 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1211ms (Views: 12.5ms | Allocations: 33175)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:55:34 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 853ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 33974)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:55:35 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1254ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 6078)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:55:40 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1146ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 7144)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:55:41 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1133ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 8213)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:56:43 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 943)
+
+
+  
+NoMethodError (undefined method `Event' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:14:in `results'
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:56:49 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 924)
+
+
+  
+NoMethodError (undefined method `reset_all' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:14:in `results'
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 21:57:52 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 2763ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 188062)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:57:56 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 916)
+
+
+  
+NoMethodError (undefined method `reset_all' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:57:56 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 913)
+
+
+  
+NoMethodError (undefined method `reset_all' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:58:18 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 925)
+
+
+  
+NoMethodError (undefined method `clear' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:58:18 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 914)
+
+
+  
+NoMethodError (undefined method `clear' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:58:37 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1022ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 10431)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:58:38 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1174ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 11492)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:58:41 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1239ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 12538)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:58:43 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 917ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 13648)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:58:51 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1586)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:58:51 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1573)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:59:03 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 930)
+
+
+  
+NoMethodError (undefined method `Event' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 21:59:03 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 917)
+
+
+  
+NoMethodError (undefined method `Event' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:00:07 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 16241)
+
+
+  
+NoMethodError (undefined method `Event' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:00:08 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 922)
+
+
+  
+NoMethodError (undefined method `Event' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:00:09 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 922)
+
+
+  
+NoMethodError (undefined method `Event' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:00:09 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 922)
+
+
+  
+NoMethodError (undefined method `Event' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:00:22 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1584)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:00:22 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1567)
+
+
+  
+NameError (uninitialized constant IwfRuby::Event):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:00:36 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 925)
+
+
+  
+NoMethodError (undefined method `clear' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:00:36 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 913)
+
+
+  
+NoMethodError (undefined method `clear' for IwfRuby::Scraper:Class):
+  
+app/controllers/scrapers_controller.rb:9:in `events_by_year'
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:00:42 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1236ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 18676)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:00:44 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 924ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 6044)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:01:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1223ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 33978)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:01:51 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:01:53 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1136ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 5861)
+
+
+Completed 200 OK in 1252ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 10907)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:01:54 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1209ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 4997)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:01:55 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 862ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 4969)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:01:56 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1221ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 4964)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:02:00 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1168ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 4960)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:02:01 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1119ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 4953)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:02:03 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1548ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 4953)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:02:05 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1022ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 4949)
+
+
+Started GET "/events/years/2021/xxxii-olympic-games/result" for 127.0.0.1 at 2022-05-28 22:02:21 -0700
+Processing by ScrapersController#results as HTML
+  Parameters: {"year"=>"2021", "name_of_event"=>"xxxii-olympic-games"}
+Completed 200 OK in 2338ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 187636)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:08:08 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:08 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:08:09 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:09 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1346ms (Views: 0.9ms | Allocations: 9868)
+
+
+Completed 200 OK in 2345ms (Views: 0.1ms | Allocations: 16775)
+
+
+Completed 200 OK in 1184ms (Views: 2.3ms | Allocations: 17434)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:08:11 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 820ms (Views: 1.3ms | Allocations: 5234)
+
+
+Completed 200 OK in 2499ms (Views: 0.5ms | Allocations: 25482)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:12 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1735ms (Views: 1.3ms | Allocations: 4272)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:14 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1804ms (Views: 0.6ms | Allocations: 4279)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:15 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 2274ms (Views: 0.3ms | Allocations: 4235)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:39 -0700
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:08:39 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 882ms (Views: 0.4ms | Allocations: 6987)
+
+
+Completed 200 OK in 1650ms (Views: 0.5ms | Allocations: 9790)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:41 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 2055ms (Views: 0.6ms | Allocations: 4236)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:43 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1611ms (Views: 0.3ms | Allocations: 4233)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:44 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1941ms (Views: 0.5ms | Allocations: 4236)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:46 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1731ms (Views: 0.5ms | Allocations: 4283)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:48 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 2551ms (Views: 0.4ms | Allocations: 4247)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:51 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1943ms (Views: 0.4ms | Allocations: 4236)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:53 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1957ms (Views: 0.2ms | Allocations: 4255)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:55 -0700
+Processing by ScrapersController#years as */*
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:08:55 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 800ms (Views: 0.4ms | Allocations: 6971)
+
+
+Completed 200 OK in 1611ms (Views: 0.5ms | Allocations: 10180)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:56 -0700
+Processing by ScrapersController#years as */*
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:57 -0700
+Processing by ScrapersController#years as */*
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:57 -0700
+Processing by ScrapersController#years as */*
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:08:57 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 794ms (Views: 1.1ms | Allocations: 7508)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:08:58 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 2349ms (Views: 0.5ms | Allocations: 15530)
+
+
+Completed 200 OK in 1739ms (Views: 0.6ms | Allocations: 18596)
+
+
+Completed 200 OK in 881ms (Views: 2.3ms | Allocations: 11206)
+
+
+Completed 200 OK in 2128ms (Views: 0.4ms | Allocations: 22547)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:08:59 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 2048ms (Views: 0.4ms | Allocations: 4283)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:09:02 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1730ms (Views: 0.4ms | Allocations: 4248)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:09:03 -0700
+Processing by ScrapersController#years as */*
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:09:05 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1554ms (Views: 0.4ms | Allocations: 5370)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:09:05 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 781ms (Views: 0.7ms | Allocations: 8126)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:09:06 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:09:06 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 867ms (Views: 0.7ms | Allocations: 7139)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:09:06 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 2462ms (Views: 0.5ms | Allocations: 20736)
+
+
+Completed 200 OK in 892ms (Views: 0.8ms | Allocations: 9329)
+
+
+Completed 200 OK in 1877ms (Views: 0.3ms | Allocations: 19426)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:09:07 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1653ms (Views: 0.3ms | Allocations: 4270)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:09:09 -0700
+Processing by ScrapersController#years as */*
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:09:10 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1647ms (Views: 0.4ms | Allocations: 5378)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:09:11 -0700
+Processing by ScrapersController#years as */*
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:09:11 -0700
+Completed 200 OK in 821ms (Views: 0.9ms | Allocations: 8474)
+
+
+Processing by ScrapersController#years as */*
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:09:11 -0700
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:09:11 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 894ms (Views: 1.5ms | Allocations: 9625)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:09:12 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1602ms (Views: 0.1ms | Allocations: 22394)
+
+
+Completed 200 OK in 1549ms (Views: 0.5ms | Allocations: 18708)
+
+
+Completed 200 OK in 831ms (Views: 2.6ms | Allocations: 11393)
+
+
+Completed 200 OK in 1882ms (Views: 0.4ms | Allocations: 23783)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:09:13 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1638ms (Views: 0.4ms | Allocations: 4248)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:11:42 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:11:42 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 830ms (Views: 0.7ms | Allocations: 6972)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:11:43 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1606ms (Views: 0.9ms | Allocations: 10832)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:11:44 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1156ms (Views: 1.3ms | Allocations: 8367)
+
+
+Completed 200 OK in 1650ms (Views: 0.8ms | Allocations: 9056)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:11:52 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:11:52 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 796ms (Views: 0.8ms | Allocations: 7312)
+
+
+Completed 200 OK in 1616ms (Views: 0.4ms | Allocations: 9344)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:11:56 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:11:56 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 872ms (Views: 1.0ms | Allocations: 5556)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:11:57 -0700
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:11:57 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1700ms (Views: 0.5ms | Allocations: 11477)
+
+
+Completed 200 OK in 831ms (Views: 0.5ms | Allocations: 9229)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:11:58 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1733ms (Views: 0.6ms | Allocations: 12677)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:11:59 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1151ms (Views: 1.0ms | Allocations: 8690)
+
+
+Completed 200 OK in 1732ms (Views: 0.4ms | Allocations: 9065)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:13:14 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:13:14 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 911ms (Views: 1.1ms | Allocations: 5242)
+
+
+Completed 200 OK in 2538ms (Views: 0.3ms | Allocations: 9779)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:13:35 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:13:35 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 840ms (Views: 1.0ms | Allocations: 5560)
+
+
+Completed 200 OK in 2442ms (Views: 0.4ms | Allocations: 9326)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:13:39 -0700
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:13:39 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1154ms (Views: 0.9ms | Allocations: 7235)
+
+
+Completed 200 OK in 1967ms (Views: 0.3ms | Allocations: 9740)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:13:42 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:13:42 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:13:43 -0700
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:13:43 -0700
+Completed 200 OK in 884ms (Views: 0.4ms | Allocations: 6415)
+
+
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 916ms (Views: 0.8ms | Allocations: 9311)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:13:44 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1978ms (Views: 0.4ms | Allocations: 19499)
+
+
+Completed 200 OK in 1738ms (Views: 0.6ms | Allocations: 14658)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:13:45 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1245ms (Views: 0.8ms | Allocations: 10572)
+
+
+Completed 200 OK in 1632ms (Views: 0.8ms | Allocations: 9105)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:13:58 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:13:58 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:13:59 -0700
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:13:59 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 906ms (Views: 0.4ms | Allocations: 8761)
+
+
+Completed 200 OK in 1719ms (Views: 0.6ms | Allocations: 11525)
+
+
+Completed 200 OK in 1200ms (Views: 2.8ms | Allocations: 15251)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:14:00 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 2082ms (Views: 1.0ms | Allocations: 20717)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:14:01 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1299ms (Views: 2.9ms | Allocations: 10195)
+
+
+Completed 200 OK in 2138ms (Views: 0.3ms | Allocations: 9118)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:14:04 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:14:04 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 833ms (Views: 0.9ms | Allocations: 5219)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:14:04 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1019ms (Views: 1.0ms | Allocations: 7007)
+
+
+Completed 200 OK in 2466ms (Views: 0.7ms | Allocations: 15698)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:14:06 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1582ms (Views: 0.5ms | Allocations: 4256)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:14:43 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:14:43 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:14:43 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:14:43 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 846ms (Views: 0.4ms | Allocations: 7023)
+
+
+Completed 200 OK in 869ms (Views: 2.4ms | Allocations: 14998)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:14:44 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 2102ms (Views: 0.6ms | Allocations: 20605)
+
+
+Completed 200 OK in 1691ms (Views: 0.5ms | Allocations: 20553)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:14:45 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1156ms (Views: 2.1ms | Allocations: 10598)
+
+
+Completed 200 OK in 1635ms (Views: 0.5ms | Allocations: 9133)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:14:57 -0700
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:14:57 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1226ms (Views: 1.0ms | Allocations: 7371)
+
+
+Completed 200 OK in 1712ms (Views: 0.8ms | Allocations: 9323)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:15:44 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 883ms (Views: 2.5ms | Allocations: 4952)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:15:45 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1168ms (Views: 1.0ms | Allocations: 4949)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:16:00 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:16:02 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1121ms (Views: 0.4ms | Allocations: 5852)
+
+
+Completed 200 OK in 1219ms (Views: 1.5ms | Allocations: 10882)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:16:03 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1215ms (Views: 1.0ms | Allocations: 4965)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:16:26 -0700
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:16:26 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1271ms (Views: 1.5ms | Allocations: 7579)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:16:27 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1858ms (Views: 0.3ms | Allocations: 10432)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:16:27 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 797ms (Views: 1.0ms | Allocations: 8161)
+
+
+Completed 200 OK in 2354ms (Views: 0.6ms | Allocations: 9112)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:17:00 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 2062ms (Views: 0.5ms | Allocations: 4266)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:17:02 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1631ms (Views: 0.7ms | Allocations: 4241)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:17:05 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1776ms (Views: 0.2ms | Allocations: 4275)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:17:07 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1947ms (Views: 0.5ms | Allocations: 4266)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:17:09 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 899ms (Views: 1.0ms | Allocations: 4955)
+
+
+Started GET "/events/years/2011" for 127.0.0.1 at 2022-05-28 22:17:21 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2011"}
+Completed 200 OK in 926ms (Views: 1.9ms | Allocations: 6269)
+
+
+Started GET "/events/years/2009" for 127.0.0.1 at 2022-05-28 22:17:40 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2009"}
+Completed 200 OK in 896ms (Views: 0.6ms | Allocations: 6521)
+
+
+Started GET "/events/years/2005" for 127.0.0.1 at 2022-05-28 22:17:52 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2005"}
+Completed 200 OK in 850ms (Views: 0.5ms | Allocations: 2667)
+
+
+Started GET "/events/years/2002" for 127.0.0.1 at 2022-05-28 22:18:00 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2002"}
+Completed 200 OK in 1063ms (Views: 0.5ms | Allocations: 2475)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:18:07 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1258ms (Views: 0.4ms | Allocations: 2221)
+
+
+Started GET "/events/years/2017" for 127.0.0.1 at 2022-05-28 22:18:10 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2017"}
+Completed 200 OK in 810ms (Views: 1.3ms | Allocations: 7296)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:18:20 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1831ms (Views: 0.7ms | Allocations: 4282)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:20:19 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1980ms (Views: 0.7ms | Allocations: 4256)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:20:21 -0700
+Processing by ScrapersController#years as */*
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:20:22 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 2357ms (Views: 0.6ms | Allocations: 7283)
+
+
+Completed 200 OK in 2162ms (Views: 0.3ms | Allocations: 8342)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:20:24 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1710ms (Views: 0.6ms | Allocations: 4247)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:20:27 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 849ms (Views: 1.1ms | Allocations: 4972)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:20:42 -0700
+Processing by ScrapersController#years as */*
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:20:43 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1623ms (Views: 0.4ms | Allocations: 5274)
+
+
+Completed 200 OK in 1999ms (Views: 0.6ms | Allocations: 6365)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:20:45 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1633ms (Views: 0.6ms | Allocations: 4247)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:20:58 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 2154ms (Views: 0.5ms | Allocations: 4260)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:21:47 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:21:47 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 848ms (Views: 0.5ms | Allocations: 6953)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:21:48 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:21:48 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1675ms (Views: 0.5ms | Allocations: 11929)
+
+
+Completed 200 OK in 1057ms (Views: 1.0ms | Allocations: 9724)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:21:49 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1641ms (Views: 0.5ms | Allocations: 12630)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:21:50 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1222ms (Views: 2.3ms | Allocations: 8171)
+
+
+Completed 200 OK in 1933ms (Views: 0.5ms | Allocations: 9088)
+
+
+Started GET "/events/years/2015" for 127.0.0.1 at 2022-05-28 22:22:00 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2015"}
+Completed 200 OK in 882ms (Views: 1.1ms | Allocations: 6849)
+
+
+Started GET "/events/years/2020" for 127.0.0.1 at 2022-05-28 22:22:05 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2020"}
+Completed 200 OK in 871ms (Views: 0.8ms | Allocations: 3372)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:22:08 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1159ms (Views: 0.4ms | Allocations: 2175)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:22:11 -0700
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:22:11 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1196ms (Views: 1.0ms | Allocations: 7590)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:22:12 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1884ms (Views: 0.6ms | Allocations: 10476)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:22:13 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1220ms (Views: 1.2ms | Allocations: 8165)
+
+
+Completed 200 OK in 1834ms (Views: 0.5ms | Allocations: 9091)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:22:16 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 778ms (Views: 1.1ms | Allocations: 4949)
+
+
+Started GET "/events/years/2020" for 127.0.0.1 at 2022-05-28 22:22:22 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2020"}
+Completed 200 OK in 818ms (Views: 0.8ms | Allocations: 3352)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:22:25 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 920ms (Views: 1.8ms | Allocations: 4958)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:22:42 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:22:42 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 815ms (Views: 0.3ms | Allocations: 4166)
+
+
+Completed 200 OK in 1650ms (Views: 0.5ms | Allocations: 6944)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:22:58 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:22:58 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1097ms (Views: 0.4ms | Allocations: 4446)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:22:59 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 820ms (Views: 0.3ms | Allocations: 2179)
+
+
+Completed 200 OK in 2019ms (Views: 0.5ms | Allocations: 10047)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:23:00 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1940ms (Views: 0.4ms | Allocations: 4254)
+
+
+Started GET "/events/years/2020" for 127.0.0.1 at 2022-05-28 22:23:03 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2020"}
+Completed 200 OK in 1247ms (Views: 0.7ms | Allocations: 3355)
+
+
+Started GET "/events/years/2017" for 127.0.0.1 at 2022-05-28 22:23:05 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2017"}
+Completed 200 OK in 973ms (Views: 1.7ms | Allocations: 7302)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:23:07 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:23:07 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 903ms (Views: 0.4ms | Allocations: 2451)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:23:08 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 915ms (Views: 0.5ms | Allocations: 4171)
+
+
+Completed 200 OK in 1908ms (Views: 0.3ms | Allocations: 10063)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:23:09 -0700
+Processing by ScrapersController#years as */*
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-05-28 22:23:11 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1606ms (Views: 0.3ms | Allocations: 5353)
+
+
+Completed 200 OK in 985ms (Views: 2.1ms | Allocations: 7069)
+
+
+Started GET "/events/years/2018" for 127.0.0.1 at 2022-05-28 22:23:26 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2018"}
+Completed 500 Internal Server Error in 1ms (Allocations: 633)
+
+
+  
+NoMethodError (undefined method `css' for nil:NilClass):
+  
+app/controllers/scrapers_controller.rb:10:in `events_by_year'
+Started GET "/events/years/2014" for 127.0.0.1 at 2022-05-28 22:23:29 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2014"}
+Completed 200 OK in 815ms (Views: 1.4ms | Allocations: 6897)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:24:26 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:24:26 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 898ms (Views: 0.2ms | Allocations: 4175)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:24:28 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:24:28 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1969ms (Views: 0.2ms | Allocations: 9113)
+
+
+Completed 200 OK in 1116ms (Views: 0.5ms | Allocations: 6593)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:24:29 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 800ms (Views: 0.4ms | Allocations: 2175)
+
+
+Completed 200 OK in 1981ms (Views: 0.3ms | Allocations: 12211)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:24:30 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1626ms (Views: 0.6ms | Allocations: 4251)
+
+
+Started GET "/events/years/2016" for 127.0.0.1 at 2022-05-28 22:25:23 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2016"}
+Completed 200 OK in 856ms (Views: 1.3ms | Allocations: 5841)
+
+
+Started GET "/events/years/2018" for 127.0.0.1 at 2022-05-28 22:25:29 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2018"}
+Completed 500 Internal Server Error in 1ms (Allocations: 621)
+
+
+  
+NoMethodError (undefined method `css' for nil:NilClass):
+  
+app/controllers/scrapers_controller.rb:10:in `events_by_year'
+Started GET "/events/years/2014" for 127.0.0.1 at 2022-05-28 22:25:31 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2014"}
+Completed 200 OK in 1016ms (Views: 2.3ms | Allocations: 6872)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:25:45 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:25:45 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 959ms (Views: 0.4ms | Allocations: 2776)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:25:46 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1882ms (Views: 0.5ms | Allocations: 9075)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:25:47 -0700
+Completed 200 OK in 928ms (Views: 0.3ms | Allocations: 6631)
+
+
+Processing by ScrapersController#years as */*
+Completed 200 OK in 2033ms (Views: 0.7ms | Allocations: 4301)
+
+
+Started GET "/events/years/2017" for 127.0.0.1 at 2022-05-28 22:25:49 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2017"}
+Completed 200 OK in 1227ms (Views: 2.9ms | Allocations: 7314)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:26:15 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:26:15 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 899ms (Views: 0.5ms | Allocations: 2774)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:26:15 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 765ms (Views: 0.8ms | Allocations: 4176)
+
+
+Completed 200 OK in 2296ms (Views: 1.9ms | Allocations: 9685)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:26:17 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1620ms (Views: 0.6ms | Allocations: 4262)
+
+
+Started GET "/events/years/2013" for 127.0.0.1 at 2022-05-28 22:26:20 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2013"}
+Completed 200 OK in 1260ms (Views: 1.1ms | Allocations: 7307)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:29:48 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:29:48 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1264ms (Views: 0.3ms | Allocations: 4499)
+
+
+Completed 200 OK in 2554ms (Views: 0.4ms | Allocations: 6561)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:29:56 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:29:56 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1109ms (Views: 0.3ms | Allocations: 4177)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:29:58 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:29:58 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 2248ms (Views: 0.2ms | Allocations: 9108)
+
+
+Completed 200 OK in 774ms (Views: 0.5ms | Allocations: 4606)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:29:59 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1224ms (Views: 0.4ms | Allocations: 4198)
+
+
+Completed 200 OK in 2322ms (Views: 0.6ms | Allocations: 12299)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:30:00 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 2026ms (Views: 0.6ms | Allocations: 4248)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:30:06 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:30:06 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 836ms (Views: 0.4ms | Allocations: 2524)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:30:07 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 809ms (Views: 0.4ms | Allocations: 4194)
+
+
+Completed 200 OK in 1758ms (Views: 0.6ms | Allocations: 10208)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:30:08 -0700
+Processing by ScrapersController#years as */*
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:30:09 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:30:09 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1872ms (Views: 0.5ms | Allocations: 6409)
+
+
+Completed 200 OK in 1065ms (Views: 0.5ms | Allocations: 4941)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:30:10 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1979ms (Views: 0.6ms | Allocations: 9838)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:30:11 -0700
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1225ms (Views: 0.4ms | Allocations: 7420)
+
+
+Completed 200 OK in 1972ms (Views: 0.5ms | Allocations: 6299)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:31:03 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:31:03 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1208ms (Views: 0.4ms | Allocations: 4780)
+
+
+Completed 200 OK in 2014ms (Views: 0.6ms | Allocations: 6697)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:31:18 -0700
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:31:18 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 829ms (Views: 0.2ms | Allocations: 4188)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-05-28 22:31:19 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 740ms (Views: 0.5ms | Allocations: 2447)
+
+
+Completed 200 OK in 1602ms (Views: 0.3ms | Allocations: 10153)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-05-28 22:31:20 -0700
+Processing by ScrapersController#years as */*
+Started GET "/events/years/2016" for 127.0.0.1 at 2022-05-28 22:31:22 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2016"}
+Completed 200 OK in 1663ms (Views: 0.3ms | Allocations: 5349)
+
+
+Completed 200 OK in 848ms (Views: 2.1ms | Allocations: 7978)
+
+
+Started GET "/events/years/2007" for 127.0.0.1 at 2022-05-28 22:31:25 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2007"}
+Completed 200 OK in 827ms (Views: 0.6ms | Allocations: 2627)
+
+
