@@ -38276,3 +38276,1043 @@ Processing by ScrapersController#men_results as HTML
 Completed 200 OK in 2561ms (Views: 1.2ms | Allocations: 29567)
 
 
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 05:26:35 -0700
+Started GET "/years" for 127.0.0.1 at 2022-06-02 05:26:35 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1208ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 33398)
+
+
+Completed 200 OK in 2269ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 35842)
+
+
+Started POST "/users" for ::1 at 2022-06-02 05:38:50 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "user"=>{"username"=>"test"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000103fae610>, params: {"username"=>"test", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"test"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test"], ["password_digest", "[FILTERED]"], ["created_at", "2022-06-02 12:38:50.392634"], ["updated_at", "2022-06-02 12:38:50.392634"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test"], ["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+Completed 200 OK in 286ms (Views: 0.2ms | ActiveRecord: 19.6ms | Allocations: 8525)
+
+
+Started GET "/auto_login" for ::1 at 2022-06-02 05:39:31 -0700
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 130)
+
+
+Started POST "/login" for ::1 at 2022-06-02 05:40:10 -0700
+Processing by AuthController#login as JSON
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "auth"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Completed 200 OK in 285ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 953)
+
+
+Started GET "/auto_login" for ::1 at 2022-06-02 05:40:13 -0700
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 96)
+
+
+Started POST "/users" for ::1 at 2022-06-02 05:40:17 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "user"=>{"username"=>"test"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000112313770>, params: {"username"=>"test", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"test"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 273ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2728)
+
+
+Started POST "/users" for ::1 at 2022-06-02 05:40:52 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"123123", "password"=>"[FILTERED]", "user"=>{"username"=>"123123"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000103c7b768>, params: {"username"=>"123123", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"123123"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "123123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "123123"], ["password_digest", "[FILTERED]"], ["created_at", "2022-06-02 12:40:52.827807"], ["updated_at", "2022-06-02 12:40:52.827807"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "123123"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+Completed 200 OK in 256ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 3378)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-06-02 05:40:56 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 05:40:56 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1113ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4312)
+
+
+Completed 200 OK in 2320ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 6529)
+
+
+Started GET "/auto_login" for ::1 at 2022-06-02 05:41:05 -0700
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 97)
+
+
+Started POST "/users" for ::1 at 2022-06-02 05:41:11 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"sdfasdf", "password"=>"[FILTERED]", "user"=>{"username"=>"sdfasdf"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000106b2ab18>, params: {"username"=>"sdfasdf", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"sdfasdf"}} }[0m
+Started GET "/years" for 127.0.0.1 at 2022-06-02 05:41:11 -0700
+Processing by ScrapersController#years as */*
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 05:41:11 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "sdfasdf"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "sdfasdf"], ["password_digest", "[FILTERED]"], ["created_at", "2022-06-02 12:41:11.826595"], ["updated_at", "2022-06-02 12:41:11.826595"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "sdfasdf"], ["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+Completed 200 OK in 278ms (Views: 0.1ms | ActiveRecord: 2.1ms | Allocations: 5545)
+
+
+Completed 200 OK in 1142ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7683)
+
+
+Completed 200 OK in 2056ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 10864)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-06-02 05:41:15 -0700
+Started GET "/auto_login" for ::1 at 2022-06-02 05:41:15 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 05:41:15 -0700
+Processing by ScrapersController#years as */*
+Processing by AuthController#auto_login as */*
+Processing by ScrapersController#events_by_year as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 98)
+
+
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1101ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4069)
+
+
+Completed 200 OK in 1916ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 7053)
+
+
+Started POST "/login" for ::1 at 2022-06-02 05:41:54 -0700
+Processing by AuthController#login as JSON
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "auth"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Started GET "/years" for 127.0.0.1 at 2022-06-02 05:41:54 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 05:41:54 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 277ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2845)
+
+
+Completed 200 OK in 823ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4447)
+
+
+Completed 200 OK in 1953ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 7415)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-06-02 05:42:07 -0700
+Started GET "/auto_login" for ::1 at 2022-06-02 05:42:07 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 05:42:07 -0700
+Processing by ScrapersController#years as */*
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 98)
+
+
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 844ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2408)
+
+
+Completed 200 OK in 1982ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 7467)
+
+
+Started POST "/users" for ::1 at 2022-06-02 05:42:14 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"test123123", "password"=>"[FILTERED]", "user"=>{"username"=>"test123123"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000110146b10>, params: {"username"=>"test123123", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"test123123"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test123123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test123123"], ["password_digest", "[FILTERED]"], ["created_at", "2022-06-02 12:42:14.535533"], ["updated_at", "2022-06-02 12:42:14.535533"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test123123"], ["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+Completed 200 OK in 279ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 3378)
+
+
+Started POST "/login" for ::1 at 2022-06-02 05:42:18 -0700
+Processing by AuthController#login as JSON
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "auth"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 05:42:18 -0700
+Started GET "/years" for 127.0.0.1 at 2022-06-02 05:42:18 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 277ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2823)
+
+
+Completed 200 OK in 795ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2990)
+
+
+Completed 200 OK in 2186ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 7435)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-06-02 05:43:01 -0700
+Started GET "/auto_login" for ::1 at 2022-06-02 05:43:01 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 05:43:01 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 98)
+
+
+Completed 200 OK in 1153ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3380)
+
+
+Completed 200 OK in 2050ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 7177)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-06-02 05:43:19 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 05:43:19 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 908ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3918)
+
+
+Completed 200 OK in 1834ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 6840)
+
+
+Started GET "/events/years/2006" for 127.0.0.1 at 2022-06-02 05:43:30 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2006"}
+Completed 200 OK in 870ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2418)
+
+
+Started GET "/events/years/2006/75th%20MEN's%20and%2018th%20WOMEN's%20WORLD%20CHAMPIONSHIPS/men_results" for 127.0.0.1 at 2022-06-02 05:43:36 -0700
+Started GET "/events/years/2006/75th%20MEN's%20and%2018th%20WOMEN's%20WORLD%20CHAMPIONSHIPS/women_results" for 127.0.0.1 at 2022-06-02 05:43:36 -0700
+Processing by ScrapersController#women_results as */*
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2006", "name_of_event"=>"75th MEN's and 18th WOMEN's WORLD CHAMPIONSHIPS"}
+  Parameters: {"year"=>"2006", "name_of_event"=>"75th MEN's and 18th WOMEN's WORLD CHAMPIONSHIPS"}
+Completed 200 OK in 3060ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 119129)
+
+
+Completed 200 OK in 3357ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 278673)
+
+
+Started POST "/login" for ::1 at 2022-06-02 05:44:19 -0700
+Processing by AuthController#login as JSON
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "auth"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Started GET "/years" for 127.0.0.1 at 2022-06-02 05:44:19 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 05:44:19 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 276ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2843)
+
+
+Completed 200 OK in 1157ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3017)
+
+
+Started GET "/auto_login" for ::1 at 2022-06-02 05:44:21 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 05:44:21 -0700
+Started GET "/years" for 127.0.0.1 at 2022-06-02 05:44:21 -0700
+Processing by AuthController#auto_login as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Processing by ScrapersController#years as */*
+Completed 200 OK in 2221ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 10189)
+
+
+Completed 200 OK in 810ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 5244)
+
+
+Completed 200 OK in 1598ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 8706)
+
+
+Started GET "/" for ::1 at 2022-06-02 05:44:40 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cjw/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 621)
+Completed 200 OK in 16ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3297)
+
+
+Started GET "/mockServiceWorker.js" for ::1 at 2022-06-02 05:44:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/years" for ::1 at 2022-06-02 05:44:46 -0700
+Processing by ScrapersController#years as HTML
+Completed 200 OK in 2010ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4253)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-06-02 05:44:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/mockServiceWorker.js" for ::1 at 2022-06-02 05:44:50 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/mockServiceWorker.js" for ::1 at 2022-06-02 05:45:19 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/mockServiceWorker.js"):
+  
+Started GET "/auto_login" for ::1 at 2022-06-02 06:20:11 -0700
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 2ms (Views: 0.7ms | Allocations: 96)
+
+
+Started GET "/auto_login" for ::1 at 2022-06-02 06:22:53 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 15464)
+
+
+Started GET "/auto_login" for ::1 at 2022-06-02 06:22:58 -0700
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 100)
+
+
+Started GET "/auto_login" for ::1 at 2022-06-02 06:23:11 -0700
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 100)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 06:23:12 -0700
+Started GET "/years" for 127.0.0.1 at 2022-06-02 06:23:12 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1457ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 16225)
+
+
+Completed 200 OK in 2689ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 20261)
+
+
+Started GET "/auto_login" for ::1 at 2022-06-02 06:23:16 -0700
+Started GET "/years" for 127.0.0.1 at 2022-06-02 06:23:16 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 06:23:16 -0700
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 98)
+
+
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 912ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 3920)
+
+
+Completed 200 OK in 1733ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 6873)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-06-02 06:34:07 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 06:34:07 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 2319ms (Views: 0.6ms | Allocations: 4423)
+
+
+Completed 200 OK in 2407ms (Views: 0.3ms | Allocations: 6579)
+
+
+Started GET "/events/years/2022/2022%20IWF%20Junior%20World%20Championships/men_results" for 127.0.0.1 at 2022-06-02 06:34:11 -0700
+Started GET "/events/years/2022/2022%20IWF%20Junior%20World%20Championships/women_results" for 127.0.0.1 at 2022-06-02 06:34:11 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2022", "name_of_event"=>"2022 IWF Junior World Championships"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2022", "name_of_event"=>"2022 IWF Junior World Championships"}
+Completed 200 OK in 5416ms (Views: 10.5ms | Allocations: 82928)
+
+
+Started GET "/events/years/2022/2022%20IWF%20Junior%20World%20Championships/women_results" for 127.0.0.1 at 2022-06-02 06:34:21 -0700
+Started GET "/events/years/2022/2022%20IWF%20Junior%20World%20Championships/men_results" for 127.0.0.1 at 2022-06-02 06:34:21 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2022", "name_of_event"=>"2022 IWF Junior World Championships"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2022", "name_of_event"=>"2022 IWF Junior World Championships"}
+Completed 200 OK in 3811ms (Views: 3.5ms | Allocations: 83021)
+
+
+Completed 200 OK in 6286ms (Views: 19.5ms | Allocations: 176013)
+
+
+Completed 200 OK in 17247ms (Views: 10.3ms | Allocations: 370181)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-06-02 06:35:08 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 06:35:08 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1148ms (Views: 0.6ms | Allocations: 4375)
+
+
+Completed 200 OK in 2059ms (Views: 0.5ms | Allocations: 6851)
+
+
+Started GET "/events/years/2009" for 127.0.0.1 at 2022-06-02 06:35:11 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2009"}
+Completed 200 OK in 1187ms (Views: 1.3ms | Allocations: 6276)
+
+
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/men_results" for 127.0.0.1 at 2022-06-02 06:35:15 -0700
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/women_results" for 127.0.0.1 at 2022-06-02 06:35:15 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Completed 200 OK in 1930ms (Views: 1.2ms | Allocations: 27933)
+
+
+Completed 200 OK in 2581ms (Views: 2.3ms | Allocations: 64668)
+
+
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/men_results" for 127.0.0.1 at 2022-06-02 07:29:18 -0700
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/women_results" for 127.0.0.1 at 2022-06-02 07:29:18 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Completed 200 OK in 2495ms (Views: 0.9ms | Allocations: 32182)
+
+
+Completed 200 OK in 2569ms (Views: 3.6ms | Allocations: 64288)
+
+
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/men_results" for 127.0.0.1 at 2022-06-02 07:29:28 -0700
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/women_results" for 127.0.0.1 at 2022-06-02 07:29:28 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/men_results" for 127.0.0.1 at 2022-06-02 07:29:29 -0700
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/women_results" for 127.0.0.1 at 2022-06-02 07:29:29 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Completed 200 OK in 1788ms (Views: 3.7ms | Allocations: 30447)
+
+
+Completed 200 OK in 2224ms (Views: 2.2ms | Allocations: 72609)
+
+
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/women_results" for 127.0.0.1 at 2022-06-02 07:29:30 -0700
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/men_results" for 127.0.0.1 at 2022-06-02 07:29:30 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Completed 200 OK in 1878ms (Views: 2.2ms | Allocations: 92697)
+
+
+Completed 200 OK in 1925ms (Views: 3.6ms | Allocations: 132149)
+
+
+Completed 200 OK in 2072ms (Views: 2.8ms | Allocations: 111115)
+
+
+Completed 200 OK in 2406ms (Views: 4.6ms | Allocations: 136156)
+
+
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/men_results" for 127.0.0.1 at 2022-06-02 07:30:11 -0700
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/women_results" for 127.0.0.1 at 2022-06-02 07:30:11 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScrapersController#men_results as */*
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Completed 200 OK in 2030ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 58724)
+
+
+Completed 200 OK in 2607ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 95156)
+
+
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/men_results" for 127.0.0.1 at 2022-06-02 07:31:10 -0700
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/women_results" for 127.0.0.1 at 2022-06-02 07:31:10 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/men_results" for 127.0.0.1 at 2022-06-02 07:31:11 -0700
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/women_results" for 127.0.0.1 at 2022-06-02 07:31:11 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Completed 200 OK in 2097ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 36027)
+
+
+Completed 200 OK in 2197ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 71913)
+
+
+Completed 200 OK in 1932ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 82580)
+
+
+Completed 200 OK in 2301ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 118647)
+
+
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/men_results" for 127.0.0.1 at 2022-06-02 07:32:11 -0700
+Started GET "/events/years/2009/14th%20JUNIOR%20WOMEN%20&%2022nd%20JUNIOR%20MEN%20ASIAN%20CHAMPIONSHIPS/women_results" for 127.0.0.1 at 2022-06-02 07:32:11 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2009", "name_of_event"=>"14th JUNIOR WOMEN & 22nd JUNIOR MEN ASIAN CHAMPIONSHIPS"}
+Completed 200 OK in 1828ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 27912)
+
+
+Completed 200 OK in 2370ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 64626)
+
+
+Started POST "/login" for ::1 at 2022-06-02 07:35:25 -0700
+Processing by AuthController#login as JSON
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "auth"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Started GET "/years" for 127.0.0.1 at 2022-06-02 07:35:25 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 07:35:25 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 292ms (Views: 0.1ms | ActiveRecord: 6.7ms | Allocations: 8641)
+
+
+Completed 200 OK in 1153ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4419)
+
+
+Completed 200 OK in 2353ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 6959)
+
+
+Started POST "/login" for ::1 at 2022-06-02 07:35:44 -0700
+Started GET "/years" for 127.0.0.1 at 2022-06-02 07:35:44 -0700
+Processing by AuthController#login as JSON
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "auth"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 07:35:44 -0700
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 273ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 2402)
+
+
+Completed 200 OK in 1133ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4688)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-06-02 07:35:46 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 07:35:46 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 2440ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 9252)
+
+
+Completed 200 OK in 1253ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 6498)
+
+
+Completed 200 OK in 2363ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 8820)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-06-02 07:36:08 -0700
+Started GET "/auto_login" for ::1 at 2022-06-02 07:36:08 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 07:36:08 -0700
+Processing by ScrapersController#years as */*
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 98)
+
+
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 810ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2461)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 07:36:09 -0700
+Started GET "/years" for 127.0.0.1 at 2022-06-02 07:36:09 -0700
+Started GET "/auto_login" for ::1 at 2022-06-02 07:36:09 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1990ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 10775)
+
+
+Completed 200 OK in 1158ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 7910)
+
+
+Completed 200 OK in 1941ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 10637)
+
+
+Started POST "/login" for ::1 at 2022-06-02 07:36:16 -0700
+Processing by AuthController#login as JSON
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "auth"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Started GET "/years" for 127.0.0.1 at 2022-06-02 07:36:16 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 07:36:16 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 271ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2848)
+
+
+Completed 200 OK in 1379ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 4945)
+
+
+Completed 200 OK in 1705ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 7466)
+
+
+Started GET "/auto_login" for ::1 at 2022-06-02 07:36:20 -0700
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 96)
+
+
+Started GET "/auto_login" for ::1 at 2022-06-02 07:36:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 15464)
+
+
+Started POST "/users" for ::1 at 2022-06-02 07:37:08 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"test3", "password"=>"[FILTERED]", "user"=>{"username"=>"test3"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000011c5999b8>, params: {"username"=>"test3", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"test3"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test3"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test3"], ["password_digest", "[FILTERED]"], ["created_at", "2022-06-02 14:37:08.406881"], ["updated_at", "2022-06-02 14:37:08.406881"]]
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test3"], ["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+Completed 200 OK in 290ms (Views: 0.1ms | ActiveRecord: 10.3ms | Allocations: 8525)
+
+
+Started POST "/login" for ::1 at 2022-06-02 07:37:13 -0700
+Processing by AuthController#login as JSON
+  Parameters: {"username"=>"test3", "password"=>"[FILTERED]", "auth"=>{"username"=>"test3", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test3"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Started GET "/years" for 127.0.0.1 at 2022-06-02 07:37:13 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 07:37:13 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 278ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 16459)
+
+
+Completed 200 OK in 777ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 16755)
+
+
+Completed 200 OK in 2296ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 21116)
+
+
+Started GET "/events/years/2021" for 127.0.0.1 at 2022-06-02 07:37:19 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2021"}
+Completed 200 OK in 1194ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 4854)
+
+
+Started GET "/events/years/2005" for 127.0.0.1 at 2022-06-02 07:37:37 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2005"}
+Completed 200 OK in 914ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 2565)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 07:53:28 -0700
+Started GET "/years" for 127.0.0.1 at 2022-06-02 07:53:28 -0700
+Started GET "/auto_login" for ::1 at 2022-06-02 07:53:28 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Processing by AuthController#auto_login as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 98)
+
+
+Completed 200 OK in 1189ms (Views: 0.3ms | Allocations: 4870)
+
+
+Completed 200 OK in 1999ms (Views: 0.6ms | Allocations: 7166)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-06-02 07:53:32 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 07:53:32 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 1249ms (Views: 0.3ms | Allocations: 4264)
+
+
+Completed 200 OK in 2036ms (Views: 0.2ms | Allocations: 6485)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 07:53:42 -0700
+Started GET "/years" for 127.0.0.1 at 2022-06-02 07:53:42 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Processing by ScrapersController#years as */*
+Completed 200 OK in 769ms (Views: 0.5ms | Allocations: 2507)
+
+
+Completed 200 OK in 2138ms (Views: 0.7ms | Allocations: 6470)
+
+
+Started GET "/years" for 127.0.0.1 at 2022-06-02 12:20:48 -0700
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 12:20:48 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1412ms (Views: 1.5ms | Allocations: 3906)
+
+
+Completed 200 OK in 2627ms (Views: 0.5ms | Allocations: 6607)
+
+
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 12:32:53 -0700
+Started GET "/years" for 127.0.0.1 at 2022-06-02 12:32:53 -0700
+Processing by ScrapersController#years as */*
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1247ms (Views: 0.5ms | Allocations: 3958)
+
+
+Completed 200 OK in 2179ms (Views: 0.4ms | Allocations: 6878)
+
+
+Started GET "/events/years/2014" for 127.0.0.1 at 2022-06-02 12:32:57 -0700
+Processing by ScrapersController#events_by_year as */*
+  Parameters: {"year"=>"2014"}
+Completed 200 OK in 1228ms (Views: 1.4ms | Allocations: 6692)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:33:01 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:33:01 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 2239ms (Views: 1.0ms | Allocations: 26651)
+
+
+Completed 200 OK in 2589ms (Views: 2.0ms | Allocations: 36465)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:34:33 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:34:33 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 2160ms (Views: 0.4ms | Allocations: 19987)
+
+
+Completed 200 OK in 2211ms (Views: 3.6ms | Allocations: 33339)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:34:55 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:34:55 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1914ms (Views: 1.0ms | Allocations: 18125)
+
+
+Completed 200 OK in 2462ms (Views: 0.9ms | Allocations: 32945)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:35:50 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:35:50 -0700
+Processing by ScrapersController#men_results as */*
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1889ms (Views: 0.8ms | Allocations: 26790)
+
+
+Completed 200 OK in 1898ms (Views: 1.1ms | Allocations: 34494)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:35:55 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:35:55 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 2224ms (Views: 0.9ms | Allocations: 25207)
+
+
+Completed 200 OK in 2261ms (Views: 3.8ms | Allocations: 34674)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:36:01 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:36:01 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1841ms (Views: 0.7ms | Allocations: 18134)
+
+
+Completed 200 OK in 2305ms (Views: 1.2ms | Allocations: 32964)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:36:38 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:36:38 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 2302ms (Views: 0.8ms | Allocations: 27258)
+
+
+Completed 200 OK in 2303ms (Views: 0.9ms | Allocations: 34228)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:36:41 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:36:41 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 2133ms (Views: 5.2ms | Allocations: 18338)
+
+
+Completed 200 OK in 2249ms (Views: 2.6ms | Allocations: 33296)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:36:47 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:36:47 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1825ms (Views: 0.6ms | Allocations: 17763)
+
+
+Completed 200 OK in 2115ms (Views: 2.3ms | Allocations: 32866)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:36:53 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:36:53 -0700
+Processing by ScrapersController#men_results as */*
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1854ms (Views: 1.2ms | Allocations: 17677)
+
+
+Completed 200 OK in 2175ms (Views: 2.1ms | Allocations: 33041)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:37:13 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:37:13 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:37:15 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:37:15 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1867ms (Views: 0.3ms | Allocations: 22521)
+
+
+Completed 200 OK in 1896ms (Views: 0.9ms | Allocations: 35664)
+
+
+Completed 200 OK in 1863ms (Views: 0.7ms | Allocations: 47612)
+
+
+Completed 200 OK in 2338ms (Views: 1.9ms | Allocations: 57354)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:37:20 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:37:20 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1908ms (Views: 0.6ms | Allocations: 18070)
+
+
+Completed 200 OK in 2204ms (Views: 4.9ms | Allocations: 32897)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:37:26 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:37:26 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1822ms (Views: 0.9ms | Allocations: 34718)
+
+
+Completed 200 OK in 1806ms (Views: 0.8ms | Allocations: 27613)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:37:30 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:37:30 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1817ms (Views: 1.1ms | Allocations: 24762)
+
+
+Completed 200 OK in 2175ms (Views: 1.9ms | Allocations: 34535)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:37:50 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:37:50 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:37:52 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:37:52 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1854ms (Views: 1.1ms | Allocations: 26402)
+
+
+Completed 200 OK in 2024ms (Views: 5.1ms | Allocations: 36895)
+
+
+Completed 200 OK in 2238ms (Views: 0.6ms | Allocations: 42470)
+
+
+Completed 200 OK in 2314ms (Views: 2.5ms | Allocations: 57221)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:37:59 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:37:59 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1994ms (Views: 1.1ms | Allocations: 34270)
+
+
+Completed 200 OK in 1991ms (Views: 0.9ms | Allocations: 27557)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:38:05 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:38:05 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1739ms (Views: 0.6ms | Allocations: 17738)
+
+
+Completed 200 OK in 2634ms (Views: 1.7ms | Allocations: 33390)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:38:11 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:38:11 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 1924ms (Views: 0.7ms | Allocations: 26085)
+
+
+Completed 200 OK in 1951ms (Views: 1.0ms | Allocations: 34888)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:42:04 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:42:04 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:42:06 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:42:06 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 2544ms (Views: 0.4ms | Allocations: 20390)
+
+
+Completed 200 OK in 2640ms (Views: 3.9ms | Allocations: 35184)
+
+
+Completed 200 OK in 2040ms (Views: 4.6ms | Allocations: 47104)
+
+
+Completed 200 OK in 2241ms (Views: 1.5ms | Allocations: 57291)
+
+
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:42:15 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:42:15 -0700
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/women_results" for 127.0.0.1 at 2022-06-02 12:42:16 -0700
+Started GET "/events/years/2014/PACIFIC%20CUP%20TOURNAMENT/men_results" for 127.0.0.1 at 2022-06-02 12:42:16 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2014", "name_of_event"=>"PACIFIC CUP TOURNAMENT"}
+Completed 200 OK in 2187ms (Views: 1.1ms | Allocations: 26904)
+
+
+Completed 200 OK in 2667ms (Views: 0.6ms | Allocations: 44064)
+
+
+Completed 200 OK in 2323ms (Views: 1.6ms | Allocations: 50603)
+
+
+Completed 200 OK in 2634ms (Views: 3.1ms | Allocations: 66483)
+
+
