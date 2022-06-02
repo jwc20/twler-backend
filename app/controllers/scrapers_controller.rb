@@ -10,8 +10,18 @@ class ScrapersController < ApplicationController
     render json: IwfRuby::Scraper.new.print_events(params[:year])
   end
 
-  def results
-    athletes = IwfRuby::Scraper.new.find_event(params[:name_of_event], params[:year])
+  def men_results
+    athletes = IwfRuby::Scraper.new.find_event_result_men(params[:name_of_event], params[:year])
+    array = []
+    athletes.each do |athlete|
+      array.push(athlete) unless athlete.name.nil?
+    end
+    # puts array
+    render json: array
+  end
+
+  def women_results
+    athletes = IwfRuby::Scraper.new.find_event_result_women(params[:name_of_event], params[:year])
     array = []
     athletes.each do |athlete|
       array.push(athlete) unless athlete.name.nil?
@@ -19,9 +29,10 @@ class ScrapersController < ApplicationController
     render json: array
   end
 
-  def print_iwf_ruby_methods
-    render json: Event.instance_methods - Object.instance_methods
-  end
+  # def testttt
+  #   event_url = 'https://iwf.sport/results/results-by-events/?event_id=527'
+  #   render json: IwfRuby::Scraper.new.get_participant_countries(event_url)
+  # end
 
   private
 
