@@ -10,12 +10,7 @@ Rails.application.routes.draw do
   get '/auto_login', to: 'auth#auto_login'
   get '/user_is_authed', to: 'auth#user_is_authed'
 
-
-
-
-
-
-  get '/years/', to: 'scrapers#years'
+  get '/years', to: 'scrapers#years'
   get '/events/years/:year', to: 'scrapers#events_by_year'
 
   # get stats of event?
@@ -26,5 +21,5 @@ Rails.application.routes.draw do
   # get '/events/results/:name_of_event/men_results', to: 'scrapers#men_results'
   # get '/events/results/:name_of_event/women_results', to: 'scrapers#men_results'
 
-  get '/print_methods', to: 'scrapers#print_iwf_ruby_methods'
+  # get '/print_methods', to: 'scrapers#print_iwf_ruby_methods'
 end
