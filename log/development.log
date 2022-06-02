@@ -38233,3 +38233,46 @@ Processing by ScrapersController#events_by_year as */*
 Completed 200 OK in 831ms (Views: 1.2ms | Allocations: 7111)
 
 
+Started GET "/years" for 127.0.0.1 at 2022-06-02 04:24:42 -0700
+Processing by ScrapersController#years as HTML
+Completed 200 OK in 2326ms (Views: 0.7ms | Allocations: 4230)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-06-02 04:24:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/events/years/2022" for 127.0.0.1 at 2022-06-02 04:26:41 -0700
+Processing by ScrapersController#events_by_year as HTML
+  Parameters: {"year"=>"2022"}
+Completed 200 OK in 1132ms (Views: 0.5ms | Allocations: 2127)
+
+
+Started GET "/events/years/2020" for 127.0.0.1 at 2022-06-02 04:26:48 -0700
+Processing by ScrapersController#events_by_year as HTML
+  Parameters: {"year"=>"2020"}
+Completed 200 OK in 1150ms (Views: 0.9ms | Allocations: 3264)
+
+
+Started GET "/events/years/2013/XVII%20BOLIVAR%20GAMES/men_results" for 127.0.0.1 at 2022-06-02 04:30:31 -0700
+Started GET "/events/years/2013/XVII%20BOLIVAR%20GAMES/women_results" for 127.0.0.1 at 2022-06-02 04:30:31 -0700
+Processing by ScrapersController#women_results as */*
+  Parameters: {"year"=>"2013", "name_of_event"=>"XVII BOLIVAR GAMES"}
+Processing by ScrapersController#men_results as */*
+  Parameters: {"year"=>"2013", "name_of_event"=>"XVII BOLIVAR GAMES"}
+Completed 200 OK in 2520ms (Views: 4.2ms | Allocations: 36937)
+
+
+Completed 200 OK in 2554ms (Views: 4.4ms | Allocations: 61804)
+
+
+Started GET "/events/year/2013/xvii-bolivar-games/men_results" for 127.0.0.1 at 2022-06-02 04:33:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/events/year/2013/xvii-bolivar-games/men_results"):
+  
+Started GET "/events/years/2013/xvii-bolivar-games/men_results" for 127.0.0.1 at 2022-06-02 04:33:31 -0700
+Processing by ScrapersController#men_results as HTML
+  Parameters: {"year"=>"2013", "name_of_event"=>"xvii-bolivar-games"}
+Completed 200 OK in 2561ms (Views: 1.2ms | Allocations: 29567)
+
+
