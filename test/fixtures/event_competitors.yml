@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rank: MyString
+  bweight: 1.5
+  group: MyString
+  snatch: 1.5
+  jerk: 1.5
+  total: 1.5
+  event_id: 1
+  athlete_id: 1
+
+two:
+  rank: MyString
+  bweight: 1.5
+  group: MyString
+  snatch: 1.5
+  jerk: 1.5
+  total: 1.5
+  event_id: 1
+  athlete_id: 1
