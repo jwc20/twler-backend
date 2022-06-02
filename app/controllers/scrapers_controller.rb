@@ -1,5 +1,8 @@
 class ScrapersController < ApplicationController
+  skip_before_action :require_login, only: %i[years events_by_year men_results women_results]
+  # skip_before_action :authorized, only: [:create]
   require 'iwf_ruby'
+  # before_action :require_login
 
   def years
     render json: IwfRuby::Scraper.new.get_years_available

@@ -5,6 +5,9 @@ ruby '2.7.4'
 
 gem 'iwf_ruby', git: 'https://github.com/jwc20/iwf_ruby', ref: 'development'
 
+gem 'jwt'
+gem 'bcrypt'
+
 # delete pry later
 gem 'pry', '~> 0.13.1'
 

@@ -3,8 +3,19 @@ Rails.application.routes.draw do
   # resources :event_competitors
   # resources :athletes
   # resources :events
+  resource :users, only: [:create]
+  post '/login', to: 'auth#login'
+  get '/login', to: 'auth#token_authenticate'
 
-  get '/years', to: 'scrapers#years'
+  get '/auto_login', to: 'auth#auto_login'
+  get '/user_is_authed', to: 'auth#user_is_authed'
+
+
+
+
+
+
+  get '/years/', to: 'scrapers#years'
   get '/events/years/:year', to: 'scrapers#events_by_year'
 
   # get stats of event?

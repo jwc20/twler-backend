@@ -10,63 +10,69 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_29_031443) do
+ActiveRecord::Schema[7.0].define(version: 20_220_602_024_550) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "athletes", force: :cascade do |t|
-    t.string "name"
-    t.string "nation"
-    t.datetime "born"
-    t.string "athlete_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'athletes', force: :cascade do |t|
+    t.string 'name'
+    t.string 'nation'
+    t.datetime 'born'
+    t.string 'athlete_url'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
 
-  create_table "event_competitors", force: :cascade do |t|
-    t.string "name"
-    t.string "nation"
-    t.string "athlete_url"
-    t.datetime "birthdate"
-    t.string "rank"
-    t.float "bweight"
-    t.string "group"
-    t.string "category"
-    t.float "snatch"
-    t.float "jerk"
-    t.float "total"
-    t.integer "event_id"
-    t.integer "athlete_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'event_competitors', force: :cascade do |t|
+    t.string 'name'
+    t.string 'nation'
+    t.string 'athlete_url'
+    t.datetime 'birthdate'
+    t.string 'rank'
+    t.float 'bweight'
+    t.string 'group'
+    t.string 'category'
+    t.float 'snatch'
+    t.float 'jerk'
+    t.float 'total'
+    t.integer 'event_id'
+    t.integer 'athlete_id'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
 
-  create_table "events", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
-    t.datetime "event_date"
-    t.string "event_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'events', force: :cascade do |t|
+    t.string 'name'
+    t.string 'location'
+    t.datetime 'event_date'
+    t.string 'event_url'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
 
-  create_table "scrapers", force: :cascade do |t|
-    t.string "athlete_name"
-    t.string "nation"
-    t.datetime "birthdate"
-    t.string "athlete_url"
-    t.float "bweight"
-    t.string "group"
-    t.string "category"
-    t.float "snatch"
-    t.float "jerk"
-    t.float "total"
-    t.string "event_name"
-    t.datetime "event_date"
-    t.string "event_url"
-    t.string "location"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'scrapers', force: :cascade do |t|
+    t.string 'athlete_name'
+    t.string 'nation'
+    t.datetime 'birthdate'
+    t.string 'athlete_url'
+    t.float 'bweight'
+    t.string 'group'
+    t.string 'category'
+    t.float 'snatch'
+    t.float 'jerk'
+    t.float 'total'
+    t.string 'event_name'
+    t.datetime 'event_date'
+    t.string 'event_url'
+    t.string 'location'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
 
+  create_table 'users', force: :cascade do |t|
+    t.string 'username'
+    t.string 'password_digest'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+  end
 end
